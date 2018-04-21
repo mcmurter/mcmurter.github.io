@@ -1,0 +1,29 @@
+/*
+** Overrides.
+*/
+html {
+	overflow-y: hidden;
+}
+
+/*
+** General use.
+*/
+.full-width {
+	width: 100%;
+}
+
+/*
+** Swivel animation.
+*/
+.swivel-wrap {
+	perspective: 1000px;
+}
+.swiveler {
+	transform: rotateY(20deg);
+	animation: swivel 3s cubic-bezier(0.5, 0, 0.53, 1) alternate infinite;
+}
+@keyframes swivel {
+	to {
+		transform: rotateY(-20deg);
+	}
+}
