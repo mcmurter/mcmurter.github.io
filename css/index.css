@@ -1,15 +1,13 @@
 /*
-** Overrides.
-*/
-html {
-	overflow-y: hidden;
-}
-
-/*
 ** General use.
 */
 .full-width {
 	width: 100%;
+	height: auto;
+}
+
+.is-zeroed {
+	font-size: 0;
 }
 
 /*
