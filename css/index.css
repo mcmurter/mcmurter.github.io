@@ -1,4 +1,23 @@
 /*
+** Fonts.
+*/
+@font-face {
+	font-family: 'mcmurter';
+	src: url('../fonts/mcmurter.eot');
+	src: url('../fonts/mcmurter?#iefix') format('embedded-opentype'),
+		url('../fonts/mcmurter.woff') format('woff'),
+		url('../fonts/mcmurter.ttf')  format('truetype'),
+		url('../fonts/mcmurter.svg#svgFontName') format('svg');
+}
+
+.mcmurter-font {
+	font-family: 'mcmurter';
+	letter-spacing: 0.2em;
+	line-height: 1.2;
+	word-spacing: 0.75em;
+}
+
+/*
 ** General use.
 */
 .full-width {
@@ -10,18 +29,42 @@
 	font-size: 0;
 }
 
+
+/*
+** Character grid.
+*/
+.char-panel {
+	width: 100%;
+	font-size: 7vw;
+	text-align: center;
+	margin-right: -0.2em;
+}
+
+.char-panel.display {
+	font-size: 10vw;
+}
+
+.char-grid {
+	font-family: 'mcmurter';
+	letter-spacing: 0.2em;
+	line-height: 1.2;
+	word-spacing: 0.75em;
+}
+
 /*
 ** Swivel animation.
 */
 .swivel-wrap {
 	perspective: 1000px;
 }
+
 .swiveler {
-	transform: rotateY(20deg);
+	transform: rotateY(10deg);
 	animation: swivel 3s cubic-bezier(0.5, 0, 0.53, 1) alternate infinite;
 }
+
 @keyframes swivel {
 	to {
-		transform: rotateY(-20deg);
+		transform: rotateY(-10deg);
 	}
 }
